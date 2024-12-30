@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Carrito de Compras - aRTEmusical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><h1>aRTEmusical</h1></a>
+        </nav>
+        <h2>Productos</h2>
+        <h4>Tienda de insumos musicales</h4>
+        <nav>
+            <ul>
+                <a href="nosotros.html"><button>Nosotros</button></a>
+                <a href="productos.html"><button>Productos</button></a>
+                <a href="#contacto"><button>Contacto</button></a>
+            </ul>
+        </nav>
+        <div>Carrito de Compras</div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="caja">
+                <div>
+                    <img src="./images/guit2.jpg" alt="Guitarra">
+                </div>
+                <div class="tarjeta">
+                    <h4>Guitarra</h4>
+                    <h2>$2500000</h2>
+                    <button onclick="agregarProductos('Guitarra', 2500000)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja">
+                <div>
+                    <img src="./images/piano.jpg" alt="Piano">
+                </div>
+                <div class="tarjeta">
+                    <h4>Piano</h4>
+                    <h2>$3500000</h2>
+                    <button onclick="agregarProductos('Piano', 3500000)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja">
+                <div>
+                    <img src="./images/violin.jpg" alt="Violín">
+                </div>
+                <div class="tarjeta">
+                    <h4>Violín</h4>
+                    <h2>$2000000</h2>
+                    <button onclick="agregarProductos('Violín', 2000000)">Comprar</button>
+                </div>
+            </div>
+            <div class="caja">
+                <div>
+                    <img src="./images/Micrófono-Condensador-2.jpg" alt="Micrófono Condensador">
+                </div>
+                <div class="tarjeta">
+                    <h4>Micrófono</h4>
+                    <h2>$500000</h2>
+                    <button onclick="agregarProductos('Micrófono', 500000)">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+        </div>
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </main>
+
+    <footer>
+        <h3 id="contacto">Contacto</h3>
+        <h4>artemusical@hotmail.com</h4>
+        <h4>Tel 555-4444</h4>
+    </footer>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
